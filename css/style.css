@@ -166,7 +166,7 @@ header.fixed .header__inner{
 .intro{
     padding: 100px 0 0;
     /* height: 750px; */
-    background:  url(img/intro-back.jpg) center no-repeat;
+    background:  url(../img/intro-back.jpg) center no-repeat;
     background-size: cover;
     background-color: #2A2E49;
 }
@@ -248,17 +248,17 @@ header.fixed .header__inner{
 }
 
 #work_1{
-    background: url("img/works/work_1.jpg") center no-repeat;
+    background: url(../img/works/work_1.jpg) center no-repeat;
     background-size: cover;
 }
 
 #work_2{
-    background: url('img/works/work_2.jpg') center no-repeat;
+    background: url(../img/works/work_2.jpg) center no-repeat;
     background-size: cover;
 }
-/* "https://yasinsky93.github.io/img/works/work3.jpg" */
+
 #work_3{
-    background: url("https://yasinsky93.github.io/activebox/img/works/work3.jpg") center no-repeat;
+    background: url(../img/works/work_3.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -268,22 +268,22 @@ header.fixed .header__inner{
 }
 
 #work_5{
-    background: url("../img/works/work_5.jpg") center no-repeat;
+    background: url(../img/works/work_5.jpg) center no-repeat;
     background-size: cover;
 }
 
 #work_6{
-    background: url(img/works/work_6.jpg) center no-repeat;
+    background: url(../img/works/work_6.jpg) center no-repeat;
     background-size: cover;
 }
 
 #work_7{
-    background: url(img/works/work_7.jpg) center no-repeat;
+    background: url(../img/works/work_7.jpg) center no-repeat;
     background-size: cover;
 }
 
 #work_8{
-    background: url(img/works/work_8.jpg) center no-repeat;
+    background: url(../img/works/work_8.jpg) center no-repeat;
     background-size: cover;
 }
 
