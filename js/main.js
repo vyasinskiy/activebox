@@ -48,7 +48,7 @@ burger.addEventListener('click', () => {
 $(document).ready(function(){
     $('#reviews__slider').slick({
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 3000,
         arrows: true
     });
   });
