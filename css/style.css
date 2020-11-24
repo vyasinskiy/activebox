@@ -263,12 +263,12 @@ header.fixed .header__inner{
 }
 
 #work_4{
-    background: url(img/works/work_4.jpg) center no-repeat;
+    background: url(../img/works/work_4.jpg) center no-repeat;
     background-size: cover;
 }
 
 #work_5{
-    background: url(img/works/work_5.jpg) center no-repeat;
+    background: url("../img/works/work_5.jpg") center no-repeat;
     background-size: cover;
 }
 
