@@ -248,17 +248,17 @@ header.fixed .header__inner{
 }
 
 #work_1{
-    background: url(img/works/work_1.jpg) center no-repeat;
+    background: url("img/works/work_1.jpg") center no-repeat;
     background-size: cover;
 }
 
 #work_2{
-    background: url(img/works/work_2.jpg) center no-repeat;
+    background: url('img/works/work_2.jpg') center no-repeat;
     background-size: cover;
 }
-
+/* "https://yasinsky93.github.io/img/works/work3.jpg" */
 #work_3{
-    background: url(img/works/work_3.jpg) center no-repeat;
+    background: url("https://yasinsky93.github.io/img/works/work3.jpg") center no-repeat;
     background-size: cover;
 }
 
