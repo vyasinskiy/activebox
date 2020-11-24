@@ -313,6 +313,7 @@ header.fixed .header__inner{
     width: 25%;
     min-width: 270px;
     padding: 0 15px 30px 15px;
+    position: relative;
 }
 
 .team__photo{
@@ -341,6 +342,11 @@ header.fixed .header__inner{
     margin-bottom: 30px;
 }
 
+.team__item .socials{
+    position: absolute;
+    bottom: 0;
+}
+
 
 /* reviews
 ================ */
@@ -355,7 +361,7 @@ header.fixed .header__inner{
 
 .reviews__slider-item{
     overflow: hidden; 
-    height: 100%;
+    height: auto;
 }
 
 .reviews__inner{

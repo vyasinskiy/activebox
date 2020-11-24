@@ -49,17 +49,24 @@ $(document).ready(function () {
     $('#reviews__slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: true
+        arrows: true,
+        arrows: false
     });
 });
 
-let sliders = document.getElementsByClassName('reviews__slider-item');
-let maxHeight = 0;
-for(slider of sliders){
-    if(slider.offsetHeight > maxHeight){
-        maxHeight = slider.offsetHeight;
+const setSliderHeight = () => {
+    let sliders = document.getElementsByClassName('reviews__slider-item');
+    let maxHeight = 0;
+    for (slider of sliders) {
+        if (slider.offsetHeight > maxHeight) {
+            maxHeight = slider.offsetHeight;
+        }
     }
+    for (slider of sliders) {
+        slider.style.height = maxHeight + 'px';
+    }
+    console.log(maxHeight)
 }
-for(slider of sliders){
-    slider.style.height = maxHeight + 'px';
-}
+
+window.addEventListener("resize", setSliderHeight);
+window.addEventListener("load", setSliderHeight);
