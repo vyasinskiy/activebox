@@ -20,6 +20,7 @@ h1,h2,h3,h4,h5,h6{
     max-width: 1190px;
     margin: 0 auto;
     padding: 0 10px;
+    height: 100%;
 }
 
 /* Buttons 
@@ -346,13 +347,21 @@ header.fixed .header__inner{
 
 .reviews{
     background-color: #53354a;
-    overflow: hidden;  
+}
+
+.reviews__slider{
+    height: 100%;
+}
+
+.reviews__slider-item{
+    overflow: hidden; 
+    height: 100%;
 }
 
 .reviews__inner{
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    height: 100%;
 }
 
 .reviews__image{

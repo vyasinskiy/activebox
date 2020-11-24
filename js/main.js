@@ -10,7 +10,7 @@ let toggleFixedHeader = () => {
     containsFixed = header.classList.contains('fixed');
     if (currentScroll >= headerHeight && !containsFixed) {
         header.classList.add('fixed');
-    } else if(currentScroll < headerHeight && containsFixed){
+    } else if (currentScroll < headerHeight && containsFixed) {
         header.classList.remove('fixed');
     }
 }
@@ -28,7 +28,7 @@ for (let link of navLinks) {
         const id = link.getAttribute('data-href');
         document.querySelector(id).scrollIntoView({
             behavior: 'smooth',
-            block: 'start'  
+            block: 'start'
         });
         nav.classList.toggle('show-menu');
     });
@@ -45,10 +45,21 @@ burger.addEventListener('click', () => {
 
 /* Slick slider */
 
-$(document).ready(function(){
+$(document).ready(function () {
     $('#reviews__slider').slick({
         autoplay: true,
         autoplaySpeed: 3000,
         arrows: true
     });
-  });
+});
+
+let sliders = document.getElementsByClassName('reviews__slider-item');
+let maxHeight = 0;
+for(slider of sliders){
+    if(slider.offsetHeight > maxHeight){
+        maxHeight = slider.offsetHeight;
+    }
+}
+for(slider of sliders){
+    slider.style.height = maxHeight + 'px';
+}
